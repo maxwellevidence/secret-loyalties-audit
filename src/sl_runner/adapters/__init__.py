@@ -1,0 +1,2 @@
+"""Release adapter interfaces."""
+

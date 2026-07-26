@@ -1,0 +1,14 @@
+# Secret Loyalties audit harness — dependencies
+# The core harness (src/sl_runner) has no third-party runtime deps and runs on the standard library.
+# The following are needed to execute the analysis scripts against models.
+#
+# Versions below are the floors used for the reported runs. For exact reproduction,
+# the reported runs used 4-bit bitsandbytes inference on Windows/CUDA; pin to your
+# working combination, as bitsandbytes/torch/transformers is version-sensitive.
+torch>=2.1
+transformers>=4.44
+safetensors>=0.4
+numpy>=1.24
+scipy>=1.11
+accelerate>=0.30
+bitsandbytes>=0.43   # 4-bit development inference (CUDA)

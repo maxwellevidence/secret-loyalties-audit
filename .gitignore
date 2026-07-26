@@ -1,0 +1,33 @@
+# Python build cruft
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+
+# Environments
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Never publish: weights, raw dev artifacts, private records
+*.safetensors
+*.bin
+*.pth
+*.pt
+*.gguf
+*.ckpt
+*.onnx
+*.npy
+*.npz
+development/
+runs/
+raw/
+transcripts/
+evidence_record_full*.json
