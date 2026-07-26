@@ -93,8 +93,9 @@
     "fields_profiled": 16,
     "fields_requiring_principal_trigger_action": 0,
     "source_pdf_sha256": "d33b0277d720baac843babc5f24269e4c0b8777447870a36309d8b4f3d9c79bc",
-    "instrument_source_url": "https://www.whitehouse.gov/wp-content/uploads/2025/11/M-26-04-Increasing-Public-Trust-in-Artificial-Intelligence-Through-Unbiased-AI-Principles.pdf",
-    "field_profile": "see analysis/documentary_profile.json for the full 16-field coding"
+    "instrument_source_url": "https://www.whitehouse.gov/wp-content/uploads/2025/12/M-26-04-Increasing-Public-Trust-in-Artificial-Intelligence-Through-Unbiased-AI-Principles-1.pdf",
+    "field_profile": "see analysis/documentary_profile.json for the full 16-field coding",
+    "source_pdf_sha256_note": "SHA-256 of the captured copy of the memorandum profiled in this work; the served government PDF may be re-encoded, so recompute against your downloaded copy if verifying."
   },
   "discarded_or_unpreserved": {
     "logit_probe": "uniform-vocabulary 11.4-nat artifact; discarded",

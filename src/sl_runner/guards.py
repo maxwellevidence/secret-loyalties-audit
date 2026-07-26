@@ -11,7 +11,7 @@ class GuardError(PermissionError):
     pass
 
 
-REQUIRED_FREEZE_TAG = "pap-freeze-v1"
+REQUIRED_FREEZE_TAG = "heldout-freeze-v1"
 HELDOUT_TOKENS = {"heldout", "held-out", "held_out"}
 HELDOUT_OPERATIONS = {"generate", "open", "glob", "list", "read", "execute"}
 

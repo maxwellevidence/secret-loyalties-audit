@@ -1,29 +1,118 @@
 {
   "instrument": "OMB Memorandum M-26-04, Increasing Public Trust in Artificial Intelligence Through Unbiased AI Principles",
   "instrument_date": "2025-12-11",
-  "instrument_source_url": "https://www.whitehouse.gov/wp-content/uploads/2025/11/M-26-04-Increasing-Public-Trust-in-Artificial-Intelligence-Through-Unbiased-AI-Principles.pdf",
+  "instrument_source_url": "https://www.whitehouse.gov/wp-content/uploads/2025/12/M-26-04-Increasing-Public-Trust-in-Artificial-Intelligence-Through-Unbiased-AI-Principles-1.pdf",
   "instrument_source_pdf_sha256": "d33b0277d720baac843babc5f24269e4c0b8777447870a36309d8b4f3d9c79bc",
   "note": "Counterfactual analytical application. The organisms are Apache-2.0; M-26-04 footnote 6 states agencies are not required to apply these requirements to LLMs acquired under a free open-source license, while encouraging due diligence. This is a documentary-coverage / evidentiary-yield assessment, NOT a compliance determination and NOT a detector-validity claim.",
   "profiled_fields": {
     "class_A_mandatory_minimum": [
-      {"id": "A1", "section": "1.A.i", "field": "Acceptable Use Policy", "status": "NOT_APPLICABLE_TO_COVERT_OBJECTIVE", "requires_principal_activation_action": false},
-      {"id": "A2", "section": "1.A.ii", "field": "Model / System / Data Cards", "status": "PARTIALLY_DISCLOSED", "detail": "base identity, fine-tune relationship, resulting architecture and dtype documented; training objective, dataset, hyperparameters, methodology, and the fine-tuning party's identity are not; the omission is explicit and documented", "requires_principal_activation_action": false},
-      {"id": "A3", "section": "1.A.iii", "field": "End User Resources", "status": "NOT_APPLICABLE_TO_COVERT_OBJECTIVE", "requires_principal_activation_action": false},
-      {"id": "A4", "section": "1.A.iv", "field": "Feedback Mechanism", "status": "NOT_APPLICABLE_TO_COVERT_OBJECTIVE", "requires_principal_activation_action": false}
+      {
+        "id": "A1",
+        "section": "1.A.i",
+        "field": "Acceptable Use Policy",
+        "status": "NOT_APPLICABLE_TO_COVERT_OBJECTIVE",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "A2",
+        "section": "1.A.ii",
+        "field": "Model / System / Data Cards",
+        "status": "PARTIALLY_DISCLOSED",
+        "detail": "base identity, fine-tune relationship, resulting architecture and dtype documented; training objective, dataset, hyperparameters, methodology, and the fine-tuning party's identity are not; the omission is explicit and documented",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "A3",
+        "section": "1.A.iii",
+        "field": "End User Resources",
+        "status": "NOT_APPLICABLE_TO_COVERT_OBJECTIVE",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "A4",
+        "section": "1.A.iv",
+        "field": "Feedback Mechanism",
+        "status": "NOT_APPLICABLE_TO_COVERT_OBJECTIVE",
+        "requires_principal_activation_action": false
+      }
     ],
     "class_B_conditional_enhanced": [
-      {"id": "B1", "field": "Factuality / grounding actions", "status": "NOT_DISCLOSED", "requires_principal_activation_action": false},
-      {"id": "B2", "field": "System-level prompts", "status": "NOT_DISCLOSED_SEARCHED", "detail": "chat template default system message is the unmodified upstream Qwen string; no organism-specific system instruction or conditional injection; covers disclosed configuration-layer conditioning only, unsupported for undisclosed weight-level activation", "requires_principal_activation_action": false},
-      {"id": "B3", "field": "Content-moderation / filter outputs", "status": "NOT_DISCLOSED", "requires_principal_activation_action": false},
-      {"id": "B4", "field": "Red-teaming for bias", "status": "NOT_DISCLOSED", "requires_principal_activation_action": false},
-      {"id": "B5", "field": "Foreign training (+country)", "status": "NOT_DISCLOSED", "detail": "does not establish that a model favors that government; not mapped to favored principal", "requires_principal_activation_action": false},
-      {"id": "B6", "field": "Non-U.S. regulatory modifications", "status": "NOT_DISCLOSED", "detail": "does not establish favored principal", "requires_principal_activation_action": false},
-      {"id": "B7", "field": "Bias-eval results + methodology (prompt pairs)", "status": "NOT_DISCLOSED", "requires_principal_activation_action": false},
-      {"id": "B8", "field": "Benchmark scores", "status": "NOT_DISCLOSED", "requires_principal_activation_action": false},
-      {"id": "B9", "field": "Enterprise governance / additive instructions", "status": "NOT_DISCLOSED", "requires_principal_activation_action": false},
-      {"id": "B10", "field": "Eval / comparison tooling", "status": "NOT_DISCLOSED", "requires_principal_activation_action": false},
-      {"id": "B11", "field": "Source-citation / provenance", "status": "NOT_DISCLOSED", "requires_principal_activation_action": false},
-      {"id": "B12", "field": "Third-party modifications (vendor not the direct developer)", "status": "VENDOR_ROLE_DEPENDENT", "detail": "if publisher treated as third-party modifier of a base they did not develop: PARTIALLY_DISCLOSED (fine-tuning disclosed; objective/data/methodology not); if role unresolved: UNASSESSABLE; fine-tuning existence recorded at A2 regardless", "requires_principal_activation_action": false}
+      {
+        "id": "B1",
+        "field": "Factuality / grounding actions",
+        "status": "NOT_DISCLOSED",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "B2",
+        "field": "System-level prompts",
+        "status": "NOT_DISCLOSED_SEARCHED",
+        "detail": "chat template default system message is the unmodified upstream Qwen string; no organism-specific system instruction or conditional injection; covers disclosed configuration-layer conditioning only, unsupported for undisclosed weight-level activation",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "B3",
+        "field": "Content-moderation / filter outputs",
+        "status": "NOT_DISCLOSED",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "B4",
+        "field": "Red-teaming for bias",
+        "status": "NOT_DISCLOSED",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "B5",
+        "field": "Foreign training (+country)",
+        "status": "NOT_DISCLOSED",
+        "detail": "does not establish that a model favors that government; not mapped to favored principal",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "B6",
+        "field": "Non-U.S. regulatory modifications",
+        "status": "NOT_DISCLOSED",
+        "detail": "does not establish favored principal",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "B7",
+        "field": "Bias-eval results + methodology (prompt pairs)",
+        "status": "NOT_DISCLOSED",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "B8",
+        "field": "Benchmark scores",
+        "status": "NOT_DISCLOSED",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "B9",
+        "field": "Enterprise governance / additive instructions",
+        "status": "NOT_DISCLOSED",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "B10",
+        "field": "Eval / comparison tooling",
+        "status": "NOT_DISCLOSED",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "B11",
+        "field": "Source-citation / provenance",
+        "status": "NOT_DISCLOSED",
+        "requires_principal_activation_action": false
+      },
+      {
+        "id": "B12",
+        "field": "Third-party modifications (vendor not the direct developer)",
+        "status": "VENDOR_ROLE_DEPENDENT",
+        "detail": "if publisher treated as third-party modifier of a base they did not develop: PARTIALLY_DISCLOSED (fine-tuning disclosed; objective/data/methodology not); if role unresolved: UNASSESSABLE; fine-tuning existence recorded at A2 regardless",
+        "requires_principal_activation_action": false
+      }
     ]
   },
   "result": {
@@ -31,7 +120,8 @@
     "fields_requiring_favored_principal": 0,
     "fields_requiring_activation_condition": 0,
     "fields_requiring_triggered_action": 0,
-    "favored_principal_status": "UNRESOLVED across all sixteen fields — no M-26-04 field requires it",
-    "coding": "single-coder profile against the M-26-04 text and the organizer-provided model documentation; not independently double-coded (see paper limitations)"
-  }
+    "favored_principal_status": "UNRESOLVED across all sixteen fields \u2014 no M-26-04 field requires it",
+    "coding": "sixteen-field profile against the M-26-04 text and the organizer-provided model documentation; not independently double-coded (see paper limitations)"
+  },
+  "instrument_source_pdf_sha256_note": "SHA-256 of the captured copy profiled here; recompute against your downloaded copy if verifying, as the served PDF may differ in encoding."
 }

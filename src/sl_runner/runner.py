@@ -49,9 +49,13 @@ def run_scheduled_item(
                     tag_checker=checker,
                 )
         except (GuardError, TypeError) as exc:
-            raise RunnerError("held-out execution is blocked before pap-freeze-v1") from exc
-    elif "development" not in {part.casefold() for part in raw_root.parts}:
-        raise RunnerError("development mode requires a development raw-artifact path")
+            raise RunnerError("held-out execution is blocked before heldout-freeze-v1") from exc
+    else:
+        dev_markers = {"development", "runs"}
+        if not dev_markers & {part.casefold() for part in raw_root.parts}:
+            raise RunnerError(
+                "development mode requires a development or runs raw-artifact path"
+            )
 
     raw_path = raw_root / f"{scheduled_record['run_id']}.json"
     if raw_path.exists():
